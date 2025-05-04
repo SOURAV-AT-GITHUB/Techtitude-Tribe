@@ -1,0 +1,113 @@
+#navbar>div:nth-child(2)>div {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%);
+
+}
+
+#navbar>div:nth-child(2)>div>div {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
+
+}
+
+#home-hero-section {
+
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.25) 20%, var(--color-primary)), url('/Home/hero-cover.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+#our-expertise .bottom-black-bg {
+    background-image: linear-gradient(to top, black, rgba(255, 255, 255, 0) 100%);
+}
+
+#achievements .light-border::before {
+    position: absolute;
+    content: "";
+    top: -0.75px;
+    left: -1px;
+    height: 100.5%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    z-index: -1;
+    opacity: 0.25;
+}
+
+#achievements .light-border:last-child::before {
+    left: -1px;
+    width: 100.5%;
+}
+
+#testimonials .clients-timeline::before {
+    position: absolute;
+    content: "";
+    background-color: var(--color-primary);
+    z-index: -1;
+    height: 2.5px;
+    width: 95%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+
+#aboutus-hero-section {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.25) 20%, var(--color-primary)), url('/About-Us/hero-cover.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#who-are-we .bottom-black-bg {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.70), var(--color-primary) 100%);
+}
+
+#services-hero-section {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.25) 20%, var(--color-primary)), url('/Services/hero-cover.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* #services-timeline{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    border-right: 1px dashed var(--color-primary);
+    border-spacing: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+
+
+
+#contactus-hero-section {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.25) 20%, var(--color-primary)), url('/Contact-Us/hero-cover.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (min-width: 640px) {
+    #navbar>div:nth-child(2)>div {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
+
+    }
+
+    #navbar>div:nth-child(2)>div>div {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%);
+
+    }
+
+    #testimonials .clients-timeline::before {
+        height: 95%;
+        width: 2.5px;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
